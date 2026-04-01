@@ -156,7 +156,8 @@ And also a very Happy Married Life to you! 👰🧿 🩵🎈✨
             </div>
         </div>
     </div>
-
+<audio id="mySong" src="HBDS.mp3" loop></audio>
+    
 </body>
 <script>
     let datetxt = "2 April";
@@ -189,7 +190,8 @@ And also a very Happy Married Life to you! 👰🧿 🩵🎈✨
     var intervalContent;
     var intervalTitle;
     $("#btn__letter").on("click", function () {
-        $(".box__letter").slideDown()
+        document.getElementById('mySong').play();
+         $(".box__letter").slideDown()
         setTimeout(function () {
             $(".letter__border").slideDown();
         }, 1000)
@@ -251,6 +253,8 @@ And also a very Happy Married Life to you! 👰🧿 🩵🎈✨
     let boxmail = document.querySelector('.boxMail')
     var close = document.querySelector('.fa-xmark')
     mailBox.onclick = function () {
+        document.getElementById('mySong').play();
+        
         mailBox.classList.toggle('active')
         boxmail.classList.add('active')
     }
